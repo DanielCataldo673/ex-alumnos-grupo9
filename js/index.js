@@ -88,7 +88,7 @@ document.querySelectorAll('.fullscreen-btn').forEach(button => {
 
 
 
-function redirigirSiSeleccionado(checkboxId) {  
+/* function redirigirSiSeleccionado(checkboxId) {  
     var checkbox = document.getElementById(checkboxId);  
     if (checkbox.checked) {  
         switch (checkboxId) {  
@@ -118,4 +118,4 @@ function redirigirSiSeleccionado(checkboxId) {
                 break;  
         }  
     }  
-}  
+}   */
