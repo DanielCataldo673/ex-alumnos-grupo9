@@ -1,0 +1,134 @@
+body {
+    background-image: url(http://untroubled.org/backgrounds/space/stars.gif);
+    text-align: center;
+    overflow: hidden;
+}
+
+.start,
+.animation {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FFFFFF;
+}
+
+.start {
+    display: block;
+}
+
+.animation {
+    z-index: 1;
+}
+
+
+
+.intro {  
+    font-size: 3vw;  
+    font-family: sans-serif;   
+    font-weight: 600;   
+    font-style: italic;  
+    color: #4BD5EE;  
+    display: none;  /* Inicialmente oculto */  
+    opacity: 1;  
+    transition: opacity 0.5s ease;  
+    margin-top: 10%;
+}  
+
+
+
+.presentacion-btn {
+    margin: 10px 10px 35px 10px;
+    padding: 10px 20px;
+    font-size: 1.2vw;
+    background-color: transparent;
+    color: #000000;
+    border: solid 2px #FFE81F;
+    cursor: pointer;
+    color: #FFE81F;
+}
+
+.animation section {
+    margin: 20px 0;
+}
+
+h1 {
+    font-size: 10vw;
+    margin: 0px 0px 10px 11px;
+    font-family: 'StarJedi Special Edition', sans-serif;
+    letter-spacing: 0.4vw;
+    color: #FFE81F;
+}
+
+.h1parrafo {
+    font-size: 10vw;
+    margin: 0px;
+    margin-top: -20%;
+    font-family: 'StarJedi Special Edition', sans-serif;
+    letter-spacing: 0.4vw;
+    color: #FFE81F;
+}
+
+span {
+    font-size: 1.2vw;
+    font-family: sans-serif;
+    font-style: italic;
+    color: #FFE81F;
+}
+
+h2 {
+    font-size: 2vw;
+    font-family: sans-serif;
+    font-style: italic;
+    color: #FFE81F;
+}
+
+h3 {
+    font-size: 2.9vw;
+    font-family: sans-serif;
+    color: #FFFFFF;
+}
+
+.star-wars {
+    padding: 40px;
+    text-align: justify;
+    margin: 0;
+    letter-spacing: 1px;
+    max-width: 1300px;
+    height: 1200px;
+    transform: perspective(200px) rotateX(14deg);
+    animation: intro 80s linear;
+}
+
+@keyframes intro {
+    0% {
+        transform: perspective(200px) rotateX(14deg) translateY(800px);
+        opacity: 1;
+    }
+
+    40% {
+        opacity: 0.5;
+    }
+
+    60% {
+        opacity: .3;
+    }
+
+    80% {
+        opacity: .2;
+    }
+
+    100% {
+        transform: perspective(200px) rotateX(20deg) translateY(-1000px);
+        opacity: 0;
+    }
+}
+
+.titlesparrafo {
+    font-size: 2vw;
+    font-family: sans-serif;
+    font-style: italic;
+    color: #FFE81F;
+    line-height: 200%;
+}
