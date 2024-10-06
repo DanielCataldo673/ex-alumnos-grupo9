@@ -4,15 +4,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>
-    Caballeros
-  </title>
+  <title>Inicio</title>
 
 
 
   <!-- vincular estilos -->
   <link rel="stylesheet" href="css/estilos.css">
-  <link rel="stylesheet" href="css/republica.css">
 
 
   <!-- Animated -->
@@ -65,139 +62,166 @@
 
     <div class="articulo4">
       <header>
-        <h1>Los Caballeros de Ren</h1>
+        <h1>inicio</h1>
       </header>
     </div>
     <div class="articulo5">
       <main>
-        <p>Los Caballeros de Ren fueron una misteriosa orden de guerreros de élite que seguían al lado oscuro de la Fuerza en una era donde los Sith estaban extintos y la Orden Jedi estaba casi destruida. </p>
+        <p>¡Bienvenidos a la galaxia de Star Wars! Te presentamos nuestra increíble app, un viaje interactivo por el
+          universo que enciende la imaginación de millones. Aquí, los fans de todas las edades pueden explorar una vasta
+          colección de personajes icónicos, desde los valientes Jedi hasta los temibles Sith, cada uno con su propia
+          historia y habilidades únicas, naves, sables de luz y grandes peliculas.
+          Con nuestra app, la aventura nunca termina. ¡Que la Fuerza te acompañe en cada clic!
 
-        <div class="galeria">
-          <div class="foto"><a href="img/webp/caballeros10.webp" target="_blank"><img class="foto-1"
-                src="img/webp/caballeros10.webp" alt="banderas6"></a>
+        </p>
+
+        <h2 class="animate__animated animate__rubberBand animate__repeat-2	animate__delay-5s">Buscador</h2>
+        <div class="buscadorinicio">
+          <button class="btnbuscar" type="submit">Buscar 🔍</button>
+
+          <input type="text" placeholder="Buscar en la Galaxia" id="buscarInput">
+          
+
+
+          <button class="btnborrar" type="reset">Borrar 🗑️</button>
+        </div>
+        <div id="alertMessage" class="alertMessage2">Ingrese la búsqueda deseada de acuerdo a la temática de la app</div>  
+
+        <!-- SLIDER -->
+
+        <div class="slider">
+          <!-- list Items -->
+          <div id="slider" class="list">
+            <div class="item active">
+              <img class="myImage" src="img/jpg/lyman-hansel-gerona-TVCDj_fFvx8-unsplash.jpg"
+                alt="lyman-hansel-gerona-TVCDj_fFvx8-unsplash">
+
+            </div>
+            <div class="item">
+              <img class="myImage" src="img/jpg/rod-long-AcYH9GKvVlo-unsplash.jpg" alt="rod-long-AcYH9GKvVlo-unsplash">
+
+            </div>
+            <div class="item">
+              <img class="myImage" src="img/jpg/brian-mcgowan-ggg_B1MeqQk-unsplash.jpg"
+                alt="brian-mcgowan-ggg_B1MeqQk-unsplash">
+
+            </div>
+            <div class="item">
+              <img class="myImage" src="img/jpg/cade-roberts-EpIUbeFrqwQ-unsplash.jpg"
+                alt="cade-roberts-EpIUbeFrqwQ-unsplash">
+
+            </div>
+            <div class="item">
+              <img class="myImage" src="img/jpg/carol-kennedy-X5WdN60n6yk-unsplash.jpg"
+                alt="carol-kennedy-X5WdN60n6yk-unsplash">
+
+            </div>
+
+            <div class="item">
+              <img class="myImage" src="img/jpg/emmanuel-denier-YiXsjwJKXmo-unsplash.jpg"
+                alt="emmanuel-denier-YiXsjwJKXmo-unsplash">
+
+            </div>
+            <div class="item">
+              <img class="myImage" src="img/jpg/rod-long-51zvjVXINvE-unsplash.jpg" alt="rod-long-51zvjVXINvE-unsplash">
+
+            </div>
+            <div class="item">
+              <img class="myImage" src="img/jpg/star-warsjpg.jpg" alt="star-warsjpg">
+
+            </div>
+            <div class="item">
+              <img class="myImage" src="img/jpg/universostarwarswebp.jpg" alt="universostarwarswebp">
+
+            </div>
           </div>
-
-          <div class="foto"><a href="img/webp/caballeros3.webp" target="_blank"><img class="foto-1"
-                src="img/webp/caballeros3.webp" alt="banderas8"></a>
+          <!-- button arrows -->
+          <div class="arrows2">
+            <button id="prev"><svg xmlns="http://www.w3.org/2000/svg" height="24" width="15"
+                viewBox="0 0 320 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                <path fill="#ffffff"
+                  d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z" />
+              </svg></button>
           </div>
-
-          <div class="foto"><a href="img/webp/caballeros4.webp" target="_blank"><img class="foto-1"
-                src="img/webp/caballeros4.webp" alt="banderas9"></a>
+          <div class="arrows">
+            <button id="next"><svg xmlns="http://www.w3.org/2000/svg" height="24" width="15"
+                viewBox="0 0 320 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                <path fill="#ffffff"
+                  d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+              </svg></button>
           </div>
-
+          <!-- thumbnail -->
+          <div class="thumbnail">
+            <div class="item active">
+              <img src="img/jpg/lyman-hansel-gerona-TVCDj_fFvx8-unsplash.jpg">
+              <div class="content">
+                <!--  <h3>Titulo</h3>  -->
+                <button class="fullscreen-btn">FullScreen</button>
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/jpg/rod-long-AcYH9GKvVlo-unsplash.jpg">
+              <div class="content">
+                <!--  <h3>Titulo</h3>  -->
+                <button class="fullscreen-btn">FullScreen</button>
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/jpg/brian-mcgowan-ggg_B1MeqQk-unsplash.jpg">
+              <div class="content">
+                <!-- <h3>Titulo</h3>  -->
+                <button class="fullscreen-btn">FullScreen</button>
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/jpg/cade-roberts-EpIUbeFrqwQ-unsplash.jpg">
+              <div class="content">
+                <!-- <h3>Titulo</h3>  -->
+                <button class="fullscreen-btn">FullScreen</button>
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/jpg/carol-kennedy-X5WdN60n6yk-unsplash.jpg">
+              <div class="content">
+                <!-- <h3>Titulo</h3>  -->
+                <button class="fullscreen-btn">FullScreen</button>
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/jpg/emmanuel-denier-YiXsjwJKXmo-unsplash.jpg">
+              <div class="content">
+                <!-- <h3>Titulo</h3>  -->
+                <button class="fullscreen-btn">FullScreen</button>
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/jpg/rod-long-51zvjVXINvE-unsplash.jpg">
+              <div class="content">
+                <!-- <h3>Titulo</h3>  -->
+                <button class="fullscreen-btn">FullScreen</button>
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/jpg/star-warsjpg.jpg">
+              <div class="content">
+                <!-- <h3>Titulo</h3>  -->
+                <button class="fullscreen-btn">FullScreen</button>
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/jpg/universostarwarswebp.jpg">
+              <div class="content">
+                <!-- <h3>Titulo</h3>  -->
+                <button class="fullscreen-btn">FullScreen</button>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <h2>Historia</h2>
-
-        <p class="republica">No eran ni Caballeros Jedi ni Lores Sith, sino miembros de una nueva generación de guerreros de la Fuerza que emergió antes de la masacre de los aprendices del Maestro Jedi Luke Skywalker, de los cuales el más prominente era Kylo Ren. Seducido por el poder del lado oscuro, el antiguo Ben Solo renunció a los Jedi y adoptó un nuevo nombre además del título de maestro de los Caballeros de Ren, convirtiéndose en el discípulo del Líder Supremo Snoke y un señor de la guerra de la Primera Orden. Bajo la guía de Snoke, los Caballeros de Ren llenaron el vacío dejado por el fallecimiento del abuelo de Kylo, Darth Vader, el último Lord Sith. Ren, quien se ganó el apodo de «Mata Jedi« al destruir a la generación de Jedi entrenados por Skywalker, estaba determinado a destruir al último Jedi y completar el legado de su abuelo.</p>
-        <p class="republica">Durante los últimos días de la Guerra Fría, Ren cazó a su antiguo maestro con el apoyo de las fuerzas de la Primera Orden, viajando a través de la galaxia en busca de pistas de la ubicación del ermitaño Skywalker. Cuando una cadena de eventos se desató, conspirando a forzar una confrontación entre Kylo y su padre, Han Solo, Snoke le advirtió a su aprendiz en constante conflicto que se preparara para su más grande reto hasta ese momento. Aunque aún era vulnerable en el lado luminoso de la Fuerza, el maestro de los Caballeros de Ren estaba confiado de que el entrenamiento del Líder Supremo lo había preparado para tener éxito donde Vader y sus sentimientos fallaron.</p>
-        <p class="republica">Poco antes de la caída de la Nueva República, la carroñera de Jakku Rey, visitó el castillo de Maz Kanata en el planeta Takodana, donde la Fuerza la llevó a descubrir el sable de luz Jedi que una vez perteneció a Luke Skywalker y a su padre, Anakin Skywalker, antes de él. Insegura de su conexión con la Fuerza, Rey tocó el sable de luz y consecuentemente experimentó una serie de visiones de la Fuerza, en una de la cual revelaba a Kylo y a los enigmáticos Caballeros de Ren.
-        </p>
-        <h2>Equipo</h2>
-        <p class="republica">Los Caballeros de Ren vestían una armadura abollada y oxidada y escondían sus rostros debajo de máscaras siniestras —haciendo semejanza al casco del mismísimo Kylo. Cada Caballero estaba armado con un arma única y letalmente efectiva, adecuada para combate tanto de corto como de largo alcance.
-        </p>
-
-        <div class="galeria">
-          <div class="foto"><a href="img/webp/caballeros8.webp" target="_blank"><img class="foto-1"
-                src="img/webp/caballeros8.webp" alt="banderas6"></a>
-          </div>
-
-          <div class="foto"><a href="img/webp/caballeros9.webp" target="_blank"><img class="foto-1"
-                src="img/webp/caballeros9.webp" alt="banderas8"></a>
-          </div>
-
-          <div class="foto"><a href="img/jpg/caballeros.jpg" target="_blank"><img class="foto-1"
-                src="img/jpg/caballeros.jpg" alt="banderas9"></a>
-          </div>
-
-        </div>
-
-        <h2>Descripción</h2>
-        <p class="republica">Los Caballeros de Ren no eran ni Jedi ni Sith, sino una nueva generación de guerreros del lado oscuro que emergieron para llenar el vacío dejado por la muerte de los últimos Lores Sith, Darth Sidious y Darth Vader.Tenían una especie de código, el cual eran flexibles en seguirlo: viviendo la vida en la forma en la que querían, tomando lo que la galaxia les diera y consumiendo lo que el lado oscuro les enviara.
-        </p>
-        <p class="republica">El arquetipo de esta generación era Kylo Ren,el maestro de los Caballeros de Ren y heredero del linaje del más poderoso Jedi o Sith en la historia galáctica.Los Caballeros de Ren servían como los sirvientes más misteriosos y mortales de Kylo.Sensible a la Fuerza como su maestro, los Caballeros eran poderosos en el lado oscuro, aunque no tan poderosos como los Jedi o los Sith.No obstante, sus habilidades de lucha y artes marciales eran incomparables.
-        </p>
-        <p class="republica">A pesar de las ataduras de Kylo Ren con la Primera Orden, los otros Caballeros no tenían afiliación al sucesor del Imperio Galáctico, ya que Kylo y el Líder Supremo Snoke eran los únicos dos seres que podían comandar la Fuerza en ese Estado ermitaño.[7]
-        </p>
-
-        <div class="galeria">
-          <div class="foto"><a href="img/jpg/caballeros2.jpg" target="_blank"><img class="foto-1"
-                src="img/jpg/caballeros2.jpg" alt="banderas6"></a>
-          </div>
-
-          <div class="foto"><a href="img/jpg/caballeros5.jpg" target="_blank"><img class="foto-1"
-                src="img/jpg/caballeros5.jpg" alt="banderas8"></a>
-          </div>
-
-          <div class="foto"><a href="img/jpg/caballeros6.jpg" target="_blank"><img class="foto-1"
-                src="img/jpg/caballeros6.jpg" alt="banderas9"></a>
-          </div>
-
-        </div>
-
-        <details>  
-          <summary>  
-              📜 información de los Caballeros de Ren (haz clic para expandir)  
-          </summary>  
-          <table>  
-              <caption>  
-                  Un resumen de los Caballeros de Ren  
-              </caption>  
-              <thead>  
-                  <tr>  
-                      <th colspan="2">Información de la organización</th>  
-                  </tr>  
-                  <tr>  
-                      <th scope="col">Categoría</th>  
-                      <th scope="col">Detalles</th>  
-                  </tr>  
-              </thead>  
-              <tbody>  
-                  <tr>  
-                      <td>Título del líder</td>  
-                      <td>Maestro de los Caballeros de Ren</td>  
-                  </tr>  
-                  <tr>  
-                      <td>Organizaciones afiliadas</td>  
-                      <td>Primera Orden</td>  
-                  </tr>  
-                  <tr>  
-                      <td>Creencias</td>  
-                      <td>Deidades, Lado oscuro de la Fuerza</td>  
-                  </tr>  
-                  <tr>  
-                      <td>Lugares y templos</td>  
-                      <td>Finalizador, Base Starkiller, Supremacía</td>  
-                  </tr>  
-                  <tr>  
-                      <td>Reliquias y artefactos</td>  
-                      <td>Casco de Darth Vader</td>  
-                  </tr>  
-                  <tr class="separator">  
-                      <td colspan="2"></td> <!-- Casilla de separación -->  
-                  </tr>  
-                  <thead>  
-                      <tr>  
-                          <th colspan="2">Información histórica</th>  
-                      </tr>  
-                      <tr>  
-                          <th scope="col">Categoría</th>  
-                          <th scope="col">Detalles</th>  
-                      </tr>  
-                  </thead>  
-                  <tr>  
-                      <td>Fecha de fundación</td>  
-                      <td>Algún tiempo antes de la destrucción del Templo Jedi</td>  
-                  </tr>  
-              </tbody>  
-          </table>  
-      </details>
       </main>
-      <div class="iconorepublica"><img src="img/png/caballeros13-fotor-bg-remover-2024092684411.png" alt="alianzalogo"></div>
     </div>
 
     <div class="articulo6">
-      
       <div class="botones-fin">
         <!-- Inicio de Pagina -->
         <div class="icono-container">
@@ -267,13 +291,3 @@
 </body>
 
 </html>
-
-
-
-
-
-
-
-
-
-
