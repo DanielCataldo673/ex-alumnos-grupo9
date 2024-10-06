@@ -57,7 +57,7 @@ p {
   max-width: 1200px;
 }
 
-cite{
+cite {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-style: italic;
@@ -174,7 +174,7 @@ ul.nav li.no-hover a:hover {
 
 .buscadorinicio input {
   width: 200px;
-  height: 37px;
+  height: 47px;
   text-align: center;
   border-radius: 5%;
   font-size: 1vw;
@@ -185,8 +185,8 @@ ul.nav li.no-hover a:hover {
 }
 
 .buscadorinicio .btnbuscar {
-  width: 60px;
-  height: 20px;
+  width: 100px;
+  height: 40px;
   background-color: #4BD5EE;
   border: none;
   color: #0B0B0F;
@@ -196,6 +196,7 @@ ul.nav li.no-hover a:hover {
   cursor: pointer;
   margin-top: 10px;
   margin-bottom: 20px;
+  padding: 3px;
 }
 
 .buscadorinicio .btnbuscar:hover {
@@ -205,8 +206,8 @@ ul.nav li.no-hover a:hover {
 }
 
 .buscadorinicio .btnborrar {
-  width: 60px;
-  height: 20px;
+  width: 100px;
+  height: 40px;
   background-color: #FF2400;
   border: none;
   color: #0B0B0F;
@@ -216,6 +217,7 @@ ul.nav li.no-hover a:hover {
   cursor: pointer;
   margin-top: 20px;
   margin-bottom: 20px;
+  padding: 5px;
 }
 
 .buscadorinicio .btnborrar:hover {
@@ -224,6 +226,23 @@ ul.nav li.no-hover a:hover {
   -moz-box-shadow: 2px 0px 6px 10px rgba(255, 36, 0, 0.21);
 }
 
+.alertMessage2 {
+  display: none;
+  background-color: #4BD5EE;
+  color: #000000;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 1.2vw;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 5%;
+  width: 600px;
+  height: 40px;
+  margin-left: 29%;
+  box-shadow: 2px 1px 23px 13px rgba(192, 192, 192, 0.69);
+
+}
 
 
 

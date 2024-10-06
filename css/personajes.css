@@ -243,16 +243,16 @@ legend {
 }
 
 .buscadorpersonajes .btnbuscar {
-  width: 65px;
+  width: 90px;
   height: 25px;
   background-color: #4BD5EE;
   border: none;
   color: #0B0B0F;
   font-size: 1vw;
   font-weight: 700;
-  border-radius: 50%;
+  border-radius: 5%;
   cursor: pointer;
-  margin-top: 13px;
+  margin-top: 2%;
   margin-bottom: 20px;
   margin-right: 1%;
 }
@@ -264,16 +264,16 @@ legend {
 }
 
 .buscadorpersonajes .btnborrar {
-  width: 65px;
+  width: 90px;
   height: 25px;
   background-color: #FF2400;
   border: none;
   color: #0B0B0F;
   font-size: 1vw;
   font-weight: 700;
-  border-radius: 50%;
+  border-radius: 5%;
   cursor: pointer;
-  margin-top: 13px;
+  margin-top: 2%;
   margin-bottom: 20px;
 }
 

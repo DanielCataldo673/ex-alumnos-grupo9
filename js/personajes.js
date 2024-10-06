@@ -37,3 +37,16 @@ function redirigirSiSeleccionado(checkboxId) {
     }  
 }
 
+
+
+// Alert cuando se enfoca el input  
+const buscarInput = document.getElementById('buscarInput');  
+const alertMessage = document.getElementById('alertMessage');  
+
+buscarInput.addEventListener('focus', () => {  
+    alertMessage.style.display = 'block'; // Mostrar el mensaje  
+});  
+
+buscarInput.addEventListener('blur', () => {  
+    alertMessage.style.display = 'none'; // Esconder el mensaje al salir  
+});  
