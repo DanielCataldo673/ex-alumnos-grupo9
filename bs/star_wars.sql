@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 07-10-2024 a las 17:11:57
+-- Tiempo de generación: 09-10-2024 a las 00:55:09
 -- Versión del servidor: 10.4.32-MariaDB
 -- Versión de PHP: 8.2.12
 
@@ -31,6 +31,22 @@ CREATE TABLE `especie` (
   `id` int(11) NOT NULL,
   `nombre` varchar(56) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Volcado de datos para la tabla `especie`
+--
+
+INSERT INTO `especie` (`id`, `nombre`) VALUES
+(1, 'Humano'),
+(2, 'Yoda\\\'s species'),
+(3, 'Zabrak'),
+(4, 'Droide'),
+(5, 'Togruta'),
+(6, 'Wookiee'),
+(7, 'Twi\'lek '),
+(8, 'Hutt  '),
+(9, 'Mon Calamari'),
+(10, 'Ewok  ');
 
 -- --------------------------------------------------------
 
@@ -217,7 +233,7 @@ ALTER TABLE `titulo`
 -- AUTO_INCREMENT de la tabla `especie`
 --
 ALTER TABLE `especie`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT de la tabla `naves`
