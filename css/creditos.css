@@ -8,7 +8,7 @@ html {
     font-size: 62.5%;
 }
 
-body {
+.cuerpo-credito {
     background-color: black; /* Fondo negro de respaldo */
     background: url('../img/jpg/universo_creditos.jpg') no-repeat center center fixed;
     background-size: cover;
@@ -158,20 +158,20 @@ img {
     filter: contrast(200%);
 }
 
-ul {
+.creditos {
     list-style-type: none;
     padding: 0;
     font-size: 2.2rem; /* Aumentado */
 }
 
-ul li {
+.creditos li {
     margin-bottom: 10px;
     padding-left: 40px;
     position: relative;
 
 }
 
-ul li::before {
+.creditos li::before {
     content: '';
     background-image: url('../img/png/nave-espacial.png'); 
     background-size: contain;
@@ -183,35 +183,7 @@ ul li::before {
     height: 20px;
     transform: translateY(5px); /* Centrar la viñeta verticalmente */
 }
-/* Marquee 
-.marquee {
-    width: 100%;
-    height: auto;
-    overflow: hidden;
-    white-space: nowrap;
-    padding: 10px;
-  }
-  
-  .marquee span {
-    display: inline-block;
-    padding-left: 100%;
-    animation: marquee 25s linear infinite;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    font-style: italic;
-    color: #FFE81F;
-    font-size: 1.7vw;
-  } */
-  
-  @keyframes marquee {
-    0% {
-      transform: translateX(0);
-    }
-  
-    100% {
-      transform: translateX(-100%);
-    }
-  }
+
 @media (max-width: 768px) {
     .box {
         width: 90%;
