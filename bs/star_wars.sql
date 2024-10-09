@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 09-10-2024 a las 19:28:33
+-- Tiempo de generación: 09-10-2024 a las 23:10:57
 -- Versión del servidor: 10.4.32-MariaDB
 -- Versión de PHP: 8.2.12
 
@@ -129,6 +129,18 @@ CREATE TABLE `nombre_sables` (
   `nombre` varchar(56) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+--
+-- Volcado de datos para la tabla `nombre_sables`
+--
+
+INSERT INTO `nombre_sables` (`id`, `nombre`) VALUES
+(1, 'Sable de Luz Roja'),
+(2, 'Sable de Luz Azul'),
+(3, 'Sable de Luz Verde'),
+(4, 'Sable de Luz Morada'),
+(5, 'Sable de Luz Amarilla'),
+(6, 'Sable de Luz Negro (Darksaber)');
+
 -- --------------------------------------------------------
 
 --
@@ -216,6 +228,8 @@ CREATE TABLE `sables` (
   `descripcion_uno` text DEFAULT NULL,
   `descripcion_dos` text DEFAULT NULL,
   `descripcion_tres` text DEFAULT NULL,
+  `descripcion_cuatro` text DEFAULT NULL,
+  `descripcion_cinco` text DEFAULT NULL,
   `enpuniadura` text NOT NULL,
   `hoja` text NOT NULL,
   `cristal` text NOT NULL,
@@ -235,6 +249,22 @@ CREATE TABLE `titulo` (
   `id` int(11) NOT NULL,
   `nombre` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Volcado de datos para la tabla `titulo`
+--
+
+INSERT INTO `titulo` (`id`, `nombre`) VALUES
+(1, 'Episode I - The Phantom Menace (La amenaza fantasma'),
+(2, 'Episode II - Attack of the Clones (El ataque de los clones)'),
+(3, 'Episode III - Revenge of the Sith (La venganza de los Sith)'),
+(4, 'Episode IV - A New Hope (Una nueva esperanza)'),
+(5, 'Episode V - The Empire Strikes Back (El imperio contraataca)'),
+(6, 'Episode VI - Return of the Jedi (El retorno del Jedi)'),
+(7, 'Episode VII - The Force Awakens (El despertar de la Fuerza)'),
+(8, 'Episode VIII - The Last Jedi (Los últimos Jedi)'),
+(9, 'Episode IX - The Rise of Skywalker (El ascenso de Skywalker)'),
+(10, 'Rogue One: A Star Wars Story');
 
 --
 -- Índices para tablas volcadas
@@ -318,7 +348,7 @@ ALTER TABLE `nombre_naves`
 -- AUTO_INCREMENT de la tabla `nombre_sables`
 --
 ALTER TABLE `nombre_sables`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT de la tabla `peliculas`
@@ -342,7 +372,7 @@ ALTER TABLE `sables`
 -- AUTO_INCREMENT de la tabla `titulo`
 --
 ALTER TABLE `titulo`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- Restricciones para tablas volcadas
