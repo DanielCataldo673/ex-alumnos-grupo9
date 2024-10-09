@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 09-10-2024 a las 16:02:07
+-- Tiempo de generación: 09-10-2024 a las 16:47:50
 -- Versión del servidor: 10.4.32-MariaDB
 -- Versión de PHP: 8.2.12
 
@@ -56,19 +56,28 @@ INSERT INTO `especie` (`id`, `nombre`) VALUES
 
 CREATE TABLE `naves` (
   `id` int(11) NOT NULL,
-  `sistema_navegacion` varchar(50) NOT NULL,
-  `fabricante` varchar(50) NOT NULL,
-  `especificacion_tecnica` varchar(50) NOT NULL,
-  `tamanio` varchar(50) NOT NULL,
-  `faccion` varchar(50) NOT NULL,
-  `tipo` varchar(50) NOT NULL,
-  `velocidad` varchar(50) NOT NULL,
-  `armamento` varchar(50) NOT NULL,
+  `sistema_navegacion` varchar(100) NOT NULL,
+  `coste` varchar(100) NOT NULL,
+  `fabricante` varchar(100) NOT NULL,
+  `especificacion_tecnica` varchar(100) NOT NULL,
+  `tamanio` varchar(100) NOT NULL,
+  `faccion` varchar(100) NOT NULL,
+  `tipo` varchar(100) NOT NULL,
+  `velocidad` varchar(100) NOT NULL,
+  `armamento` varchar(100) NOT NULL,
   `descripcion` text NOT NULL,
   `imagen_uno` varchar(100) NOT NULL,
   `imagen_dos` varchar(100) NOT NULL,
   `nombre_naves_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Volcado de datos para la tabla `naves`
+--
+
+INSERT INTO `naves` (`id`, `sistema_navegacion`, `coste`, `fabricante`, `especificacion_tecnica`, `tamanio`, `faccion`, `tipo`, `velocidad`, `armamento`, `descripcion`, `imagen_uno`, `imagen_dos`, `nombre_naves_id`) VALUES
+(1, 'HoloNavegador con actualizaciones pirata.', 'Aproximadamente 100,000 créditos.', 'Corellian Engineering Corporation.', 'Hiperimpulsor clase 0.5.', '34.75 metros.', 'Alianza Rebelde / Neutro.', 'Carguero ligero.', '0.5 (híper) / 1050 km/h (sublumínica).', '2 cañones láser, torpedos de protones.', 'La famosa Millennium Falcon es una nave de carga\r\n                                modificada, reconocida por su velocidad y maniobrabilidad excepcionales. Con un diseño\r\n                                distintivo, esta icónica nave es utilizada por Han Solo y Chewbacca. A pesar de su\r\n                                apariencia desgastada, cuenta con avances tecnológicos que la hacen competitiva en\r\n                                combate. Su capacidad para realizar viajes en el hiperespacio con rapidez la convierte\r\n                                en un recurso valioso en la lucha contra el Imperio y los enemigos de la Rebelión.', 'Halcón_Milenario.jpg', 'Halcón_Milenario-fotor-bg-remover-20240930172554.png', 1),
+(2, 'Sistema de navegación estelar con computadoras de ', '150 Millones de créditos Imperiales por Unidad.', 'Kuat Drive Yards.', 'Motores hiperespaciales y Motores convencionales d', 'Más de 1,600 metros de longitud.', 'Imperio Galáctico.', 'Nave capital.', '0.75 (híper) / 60 km/h (sublumínica).', 'Antipersonal y multifuncional.', 'El X-wing es el caza estelar por excelencia de la Alianza\r\n                                Rebelde, diseñado para el combate y la formación de escuadrones. Su diseño distintivo\r\n                                presenta alas que se extienden en forma de X, lo que le otorga su nombre. Con potencia\r\n                                de fuego superior y velocidad, su capacidad para realizar maniobras ágiles lo convierte\r\n                                en el adversario perfecto contra los cazas TIE del Imperio. Ha sido crucial en varias\r\n                                batallas climáticas en la galaxia, destacando en \"La Batalla de Yavin\".', 'destructorestelar.jpg', 'destructorestelar-fotor-bg-remover-2024093017311.png', 2);
 
 -- --------------------------------------------------------
 
@@ -80,6 +89,24 @@ CREATE TABLE `nombre_naves` (
   `id` int(11) NOT NULL,
   `nombre` varchar(56) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Volcado de datos para la tabla `nombre_naves`
+--
+
+INSERT INTO `nombre_naves` (`id`, `nombre`) VALUES
+(1, 'Halcón Milenario'),
+(2, 'Súper Destructor Estelar'),
+(3, 'Caza estelar Ala-X'),
+(4, 'Caza estelar TIE'),
+(5, 'Silenciador TIE de Kylo Ren'),
+(6, 'Razor Crest'),
+(7, 'Slave I'),
+(8, 'Destructor Estelar Interdictor'),
+(9, 'Tantive IV'),
+(10, 'El Fantasma'),
+(11, 'Y-Wing'),
+(12, 'Ala-B');
 
 -- --------------------------------------------------------
 
@@ -100,18 +127,18 @@ CREATE TABLE `nombre_sables` (
 
 CREATE TABLE `peliculas` (
   `id` int(11) NOT NULL,
-  `estreno` varchar(56) NOT NULL,
-  `duracion` varchar(56) NOT NULL,
-  `recaudacion` varchar(70) NOT NULL,
+  `estreno` varchar(100) NOT NULL,
+  `duracion` varchar(100) NOT NULL,
+  `recaudacion` varchar(100) NOT NULL,
   `personajes_principales` text NOT NULL,
   `reparto` text NOT NULL,
-  `director` varchar(60) NOT NULL,
-  `produccion` varchar(50) NOT NULL,
-  `guion` varchar(50) NOT NULL,
-  `musica` varchar(50) NOT NULL,
-  `fotografia` varchar(50) NOT NULL,
-  `montaje` varchar(56) NOT NULL,
-  `vestuario` varchar(56) NOT NULL,
+  `director` varchar(100) NOT NULL,
+  `produccion` varchar(100) NOT NULL,
+  `guion` varchar(100) NOT NULL,
+  `musica` varchar(100) NOT NULL,
+  `fotografia` varchar(100) NOT NULL,
+  `montaje` varchar(100) NOT NULL,
+  `vestuario` varchar(100) NOT NULL,
   `sinopsis` text NOT NULL,
   `curiosidades` text NOT NULL,
   `imagen` varchar(100) NOT NULL,
@@ -126,13 +153,13 @@ CREATE TABLE `peliculas` (
 
 CREATE TABLE `personajes` (
   `id` int(11) NOT NULL,
-  `nombre` varchar(56) NOT NULL,
+  `nombre` varchar(100) NOT NULL,
   `descripcion` text NOT NULL,
   `afiliacion` varchar(100) NOT NULL,
   `planeta _ natal` varchar(100) NOT NULL,
   `habilidades` varchar(100) NOT NULL,
   `arma` varchar(100) NOT NULL,
-  `actor` varchar(56) NOT NULL,
+  `actor` varchar(100) NOT NULL,
   `imagen_uno` varchar(100) NOT NULL,
   `imagen_dos` varchar(100) NOT NULL,
   `especie_id` int(11) NOT NULL
@@ -269,13 +296,13 @@ ALTER TABLE `especie`
 -- AUTO_INCREMENT de la tabla `naves`
 --
 ALTER TABLE `naves`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT de la tabla `nombre_naves`
 --
 ALTER TABLE `nombre_naves`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT de la tabla `nombre_sables`
